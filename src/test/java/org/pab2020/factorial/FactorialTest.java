@@ -43,7 +43,6 @@ class FactorialTest {
         long obtainedValue = factorial.compute(1);
 
         assertEquals(expectedValue, obtainedValue);
-
     }
 
     @Test
@@ -52,7 +51,6 @@ class FactorialTest {
         long obtainedValue = factorial.compute(2);
 
         assertEquals(expectedValue, obtainedValue);
-
     }
 
     @Test
@@ -61,7 +59,6 @@ class FactorialTest {
         long obtainedValue = factorial.compute(4);
 
         assertEquals(expectedValue, obtainedValue);
-
     }
 
     @Test
