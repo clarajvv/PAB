@@ -17,7 +17,13 @@ public class Factorial {
         } else if (value == 2) {
             result = 2;
         } else {
-            result = value * compute(value - 1);
+            //result = value * compute(value - 1);
+            result=value;
+            while(value-1>1){
+                result=result*(value-1);
+                value=value-1;
+        }
+
         }
 
         return result;
