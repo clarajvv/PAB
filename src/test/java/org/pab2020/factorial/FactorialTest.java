@@ -4,6 +4,8 @@ package org.pab2020.factorial;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Random;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -60,10 +62,16 @@ class FactorialTest {
 
         assertEquals(expectedValue, obtainedValue);
     }
-
+    @Test//creamos un test que pruebe con cualquier número mayor que 20 (pongo 100 de límite)
+    public void factorialofBiggerThan20ShouldReturnError() {
+        Random r =new Random();
+        int val=r.nextInt(100-21)+21;
+        assertThrows(RuntimeException.class, () -> factorial.compute(30));
+    }
     @Test
     public void factorialofnegativeShouldReturnError() {
         assertThrows(RuntimeException.class, () -> factorial.compute(-1));
     }
+
 
 }
