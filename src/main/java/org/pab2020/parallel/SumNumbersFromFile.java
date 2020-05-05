@@ -2,8 +2,7 @@ package org.pab2020.parallel;
 
 import java.util.List;
 
-public class SumNumbers {
-
+public class SumNumbersFromFile {
     public static void main(String[] args) {
         List<Integer> numbers = List.of(1, 2, 3, 4, 5); //3,7,5 // 10,5 //15
 
@@ -14,6 +13,5 @@ public class SumNumbers {
 
         System.out.println("Sum: " + sum);
     }
-
 
 }
